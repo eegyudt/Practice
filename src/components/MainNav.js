@@ -11,18 +11,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import TVIcon from '@mui/icons-material/Tv';
 import { useEffect } from 'react';
 
-// import { useHistory } from "react-router-dom"
- 
-// const useStyles = makeStyles({
-//   root: {
-//     width: 500,
-//     position: "fixed",
-//     bottom: 0,
-//     backgroundColor: '#39445a',
-//     zIndex: 100,
-//   }
-// })
-
 
 export default function SimpleBottomNavigation() {
  
