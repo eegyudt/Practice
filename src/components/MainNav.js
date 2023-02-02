@@ -39,7 +39,7 @@ export default function SimpleBottomNavigation() {
         class="bottom-nav"
         value={value}
         onChange={(event, newValue) => {
-          setValue(newValue);
+        setValue(newValue);
         }}
         
       >
