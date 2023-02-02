@@ -22,6 +22,7 @@ const Trending = () => {
     fetchTrending();
   }, []);
 
+  
   return (
     <div>
       <span className='pageTitle'>Trending</span>
@@ -30,7 +31,7 @@ const Trending = () => {
         <SingleContent 
           key={c.id} 
           id={c.id} 
-          poster={c.poster_path} 
+          poster={`https://image.tmdb.org/t/p/w300/${c.poster_path}`} 
           title={c.title || c.name}  
           date={c.first_air_date || c.release_date} 
           media_type={c.media_type}

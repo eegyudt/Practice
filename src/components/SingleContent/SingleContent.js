@@ -9,10 +9,11 @@ const SingleContent = ({
   media_type,
   vote_average,
 }) => {
+  console.log("poster, typeof>>>>", poster, typeof poster)
   return (
   <div> 
 
-    <img src={poster ? `${img_300}/${poster}` : unavaliable} alt={title}/> 
+    <img src={poster ? poster : unavaliable} alt={title}/> 
     <b className="title">{title}</b>
     <span>{media_type === "tv" ? "TV Series" : "Movie"}</span>
   </div>
