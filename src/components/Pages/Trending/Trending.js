@@ -9,12 +9,6 @@ const Trending = (props) => {
   // let {data} = props;
   let img1, img2, img3, img4;
  
-  // console.log("RD", data[0]);
-  // if(data.length > 0){
-  //   img1 = `https://image.tmdb.org/t/p/w300/${data[0].poster_path}`
-  //   img2 = `https://image.tmdb.org/t/p/w300/${data[1].poster_path}`
-  //   img3 = `https://image.tmdb.org/t/p/w300/${data[2].poster_path}`
-  // }
  
   const [imgs, setImages] = useState([]);
   // const fetchTrending = async () => {
