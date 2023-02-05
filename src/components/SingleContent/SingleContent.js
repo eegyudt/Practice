@@ -1,5 +1,8 @@
-import { Mediation } from "@mui/icons-material";
+// import { Mediation } from "@mui/icons-material";
+import { Badge } from "@mui/material";
 import { img_300, unavaliable } from "../../config/config";
+import "./SingleContent.css";
+
 
 const SingleContent = ({
   id,
@@ -9,13 +12,14 @@ const SingleContent = ({
   media_type,
   vote_average,
 }) => {
-  console.log("poster, typeof>>>>", poster, typeof poster)
+  // vote_average is undefined
+  console.log("vote average  >>>  ", typeof vote_average)
   return (
-  <div> 
-
-    <img src={poster ? poster : unavaliable} alt={title}/> 
+  <div className="media"> 
+    <Badge badgeContent={vote_average} color={vote_average>6 ? "primary": "secondary"}/>
+    <img className="poster" src={poster ? poster : unavaliable} alt={title}/>  
     <b className="title">{title}</b>
-    <span>{media_type === "tv" ? "TV Series" : "Movie"}</span>
+    <span className="subtitle">{media_type === "tv" ? "TV Series" : "Movie"}</span>
   </div>
   )
 };
